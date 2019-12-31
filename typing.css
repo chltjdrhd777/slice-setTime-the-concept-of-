@@ -1,0 +1,37 @@
+body{
+  font-family: sans-serif;
+  maring: 0;
+  padding: 0;
+  box-sizing:border-box;
+  font-size:50px;
+}
+
+.intro{
+  display:flex;
+  color:white;
+  height:100vh;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://images.pexels.com/photos/3326363/pexels-photo-3326363.jpeg?cs=srgb&dl=photo-of-woman-sitting-on-rock-3326363.jpg&fm=jpg');
+  background-size: cover;
+}
+
+.typing{
+  margin-left:70px;
+}
+
+.typing::after{
+  content:"";
+  position:absolute;
+  margin-left:3px;
+  width:1px;
+  height:3.8%;
+  border-right:2px solid white;
+  animation: blink 0.8s infinite ease-in-out;
+}
+
+@keyframes blink{
+  from{
+    opacity:0;
+  }to{
+    opacity:1;
+  }
+}
